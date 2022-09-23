@@ -2,14 +2,160 @@
 <html>
 <head>
   <title>Title</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
+<style>
+body, html {
+height: 100%;
+margin: 0;
+overflow: scroll;
+overflow-x: hidden;
+}
+
+li.imagebox {
+    background-color: rgba(126, 174, 185, 0.3);
+    display: flex;
+   float: left;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 106%;
+    padding: 0px;
+}
+
+li.textbox {
+    background-color: rgba(245, 225, 213, 0s.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 106%;
+    padding: 0px;
+   
+}
+
+li.imagebox2 {
+    background-color: rgba(126, 174, 185, 0.3);
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 0px;
+}
+
+li.textbox2 {
+    background-color: rgba(245, 225, 213, 0s.3);
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 0px;
+   
+}
+div.gallery {
+  transition: transform 0.2s;
+  border-radius: 1px;
+  transform: scale(1); 
+  float: left;
+  width: 300px;
+  padding: auto;
+}
+
+div.gallery:hover {
+  transition: transform 0.3s;
+  transform: scale(180%); 
+position: static;
+border: 1px;
+ padding: 30px;
+
+  
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+}
+  .topnav {
+     background-color:rgba(245, 225, 213, 0s.3);
+ text-align: center;
+    width: 100%;
+   display: inline-block;
+ 
+}  
+.topnav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+    font-size: 17px;
+   
+}
+.topnav a:hover {
+    background-color: darkgray;
+    color: black;
+
+}
+.topnav a.active {
+    background-color:#666633;
+    color: white;
+}
+.topnav a.selected {
+    background-color:#495b5f;
+    color: white;
+}
+
+.topnav a.clock {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+</style>
 </head>
 
    
 
 
-<body>
-  <p>Test</p>
+<li class="imagebox"><div class="gallery">
+    <a href="Geit.jpg">
+        <img src="Geit.jpg"  width="400" height="400">
+    </a>
+</div></li> 
+    <li class="textbox"><div class="gallery">
+    <a href="Powerlines.jpg">
+        <img src="Powerlines.jpg"  width="400" height="400">
+    </a>
+</div></li>
+
+<li class="imagebox2">
+    <div class="gallery">
+        <a href="Natt.jpg">
+            <img src="Natt.jpg"  width="400" height="400">
+        </a>
+
+</li>
+<li class="textbox2">
+    <div class="gallery">
+        <a href="Skog.jpg">
+            <img src="Skog.jpg"  width="400" height="400">
+        </a>
+</li>
+
 </body>
 </html>

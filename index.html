@@ -8,36 +8,38 @@
 
 <style>
 body, html {
-height: 100%;
+height:100%;
 margin: 0;
-overflow: scroll;
-overflow-x: hidden;
-}
 
+
+}
+::-webkit-scrollbar {
+    display: none;
+}
 li.imagebox {
-    background-color: rgba(126, 174, 185, 0.3);
+    background-color: #87E1C7;
     display: flex;
    float: left;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 106%;
+    width: 100%;
+    height: 100%;
     padding: 0px;
 }
 
 li.textbox {
-    background-color: rgba(245, 225, 213, 0s.3);
+    background-color: #339476;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 106%;
+    width: 100%;
+    height: 100%;
     padding: 0px;
    
 }
 
 li.imagebox2 {
-    background-color: rgba(126, 174, 185, 0.3);
+    background-color: #064663;
     display: flex;
     float: right;
     justify-content: center;
@@ -48,7 +50,7 @@ li.imagebox2 {
 }
 
 li.textbox2 {
-    background-color: rgba(245, 225, 213, 0s.3);
+    background-color: #04293a;
     display: flex;
     float: right;
     justify-content: center;
@@ -62,16 +64,19 @@ div.gallery {
   transition: transform 0.2s;
   border-radius: 1px;
   transform: scale(1); 
-  float: left;
+  float: inline-start;
   width: 300px;
   padding: auto;
 }
-
+div.bildetekst {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+position: sticky;
+text-align:inherit;
+}
 div.gallery:hover {
   transition: transform 0.3s;
   transform: scale(180%); 
-position: static;
-border: 1px;
+position: sticky;
  padding: 30px;
 
   
@@ -87,29 +92,32 @@ div.gallery img {
 </style>
 </head>
 <li class="imagebox"><div class="gallery">
-  <a href="Geit.jpg">
-      <img src="Geit.jpg"  width="400" height="400">
+  <a href="bilde.jpg">
+      <img src="bilde.jpg"  width="400" height="400">
+      <br>
+      
   </a>
+  <div class="bildetekst"><p>Lorem ipsum datsom jeg elsker ole masse hjerter</p></div>
 </div></li> 
   <li class="textbox"><div class="gallery">
-  <a href="Powerlines.jpg">
-      <img src="Powerlines.jpg"  width="400" height="400">
+  <a href="">
+      <img src=""  width="400" height="400">
   </a>
 </div></li>
 
 <li class="imagebox2">
   <div class="gallery">
-      <a href="Natt.jpg">
-          <img src="Natt.jpg"  width="400" height="400">
+      <a href="">
+          <img src=""  width="400" height="400">
       </a>
 
 </li>
 <li class="textbox2">
   <div class="gallery">
-      <a href="Skog.jpg">
-          <img src="Skog.jpg"  width="400" height="400">
+      <a href="">
+          <img src=""  width="400" height="400">
       </a>
 </li>
-<a href="info.html">Link</a>
+
 </body>
 </html>

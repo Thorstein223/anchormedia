@@ -18,11 +18,23 @@ margin: 0;
 }
 
 div.bakgrunn {
-  background-image: url(bakgrunn.jpg);
-  height:fit-content; 
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+ 
+  width: 100%;
+  max-height: 100%;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
   
 
-}
+
 li.velkomst {
   float: center;
 
@@ -107,7 +119,12 @@ div.gallery img {
 
 </style>
 </head>
-
+<body>
+  <div class="bakgrunn">
+    <video autoplay muted loop id="myVideo">
+      <source src="video.mp4.mp4" type="video/mp4">
+    </video>
+  </div>
 <li class="imagebox"><div class="gallery">
   <a href="bilde.jpg">
       <img src="bilde.jpg"  width="400" height="400">

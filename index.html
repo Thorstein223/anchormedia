@@ -2,37 +2,65 @@
 <html>
 <head>
   <title>Anchor Media</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100&display=swap" rel="stylesheet">
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="kontakt.css">
 <style>
+
 body, html {
 height: 100%;
 margin: 0;
-
-
+background-color: #000000;
 }
+
+
 ::-webkit-scrollbar {
     display: none;
 }
 
-.bakgrunn {
+div.bakgrunn {
   background-color: #ECB365;
     width: 100%;
+    display: flex;
     height: 100%;
- 
-}
-#myVideo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-  
+    justify-content: center;
+    align-items: center;
 
+}
+div.introtekst {
+  left: 50%;
+top: 50%;
+justify-content: center;
+padding: 10px;
+align-items: center;
+text-align: center;
 
+}
+
+h1 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+h2 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+p {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+}
 
 
 li.imagebox2 {
@@ -42,7 +70,8 @@ li.imagebox2 {
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 100%;
+    height: 105%;
+   
    
 }
 
@@ -53,8 +82,8 @@ li.textbox2 {
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 100%;
-
+    height: 105%;
+    
    
 }
 div.gallery {
@@ -73,7 +102,7 @@ text-align:inherit;
 }
 div.gallery:hover {
   transition: transform 0.3s;
-  transform: scale(180%); 
+  transform: scale(150%); 
 position: sticky;
  padding: 30px;
 
@@ -85,15 +114,17 @@ div.gallery img {
   height: 100%;
 }
 
-#logostor {
-position: relative;
+div.logostor {
+position: absolute;
 top: 2%;;
 left: 2%;
   max-width: 15%;
   min-width: 10%;
   height: auto;
+  z-index: 1;
+  
 }
-#logostor img {
+div.logostor img {
   max-width: 100%;
     max-height: 100%;
 }
@@ -104,7 +135,25 @@ li.kontakt {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 150%;
+}
+div.bunn {
+  display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+div.bunntekst {
+left: 50%;
+top: 50%;
+justify-content: center;
+padding: 10px;
+align-items: center;
+text-align: center;
+
+  
+
 }
 </style>
 </head>
@@ -112,23 +161,27 @@ li.kontakt {
 <body>
 
   <div class="bakgrunn">
-    <div id="logostor">
+    <div class="logostor">
       <img src="Logo.png">
-    
-    </div>
     </div>
   
+    <div class="introtekst">
+      <h1>Anchor Media UB</h1>
+      <h2>Reklame for din bedrift</h2>
+    </div>
+    </div>
+   
 <li class="imagebox2">
   <div class="gallery">
       <a href="">
-          <img src=""  width="400" height="400">
+          <img src="bilde.jpg"  width="400" height="400">
       </a>
 
 </li>
 <li class="textbox2">
   <div class="gallery">
       <a href="">
-          <img src=""  width="400" height="400">
+          <img src="bilde2.jpg"  width="400" height="400">
       </a>
 </li>
 <li class="kontakt">
@@ -170,5 +223,15 @@ li.kontakt {
       </div>
     </form>
 </li>
+<div class="bunn">
+  <div class="bunntekst">
+    <h4>Anchor Media UB 2022/23</h4>
+<br>
+<br>
+<p>Osloveien 17</p>
+<p>3511 Hønefoss</p>
+  </div>
+
+</div>
 </body>
 </html>

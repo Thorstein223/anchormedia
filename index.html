@@ -2,11 +2,9 @@
 <html>
 <head>
   <title>Anchor Media</title>
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100&display=swap" rel="stylesheet">
-  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://player.vimeo.com/api/player.js"></script>
@@ -18,9 +16,6 @@ height: 100%;
 width: 100%;
 margin: 0;
 background-color: #000000;
-
-
-  
 }
 
 
@@ -35,8 +30,8 @@ div.bakgrunn {
     height: 100%;
     justify-content: center;
     align-items: center;
-
 }
+
 div.introtekst {
   left: 50%;
 top: 50%;
@@ -44,7 +39,6 @@ justify-content: center;
 padding: 10px;
 align-items: center;
 text-align: center;
-
 }
 
 h1 {
@@ -52,15 +46,18 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
+
 h2 {
   color: white;
   font-family: 'Roboto', sans-serif;
 font-weight: 400;
 }
+
 p {
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 h4 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: white;
@@ -75,11 +72,30 @@ li.imagebox2 {
     align-items: center;
     width: 50%;
     height: 105%;
-   
-   
 }
 
 li.textbox2 {
+    background-color: #04293a;
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 105%;
+    
+   
+}
+li.imagebox {
+    background-color: #064663;
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 105%;
+}
+
+li.textbox {
     background-color: #04293a;
     display: flex;
     float: right;
@@ -196,9 +212,24 @@ text-align: center;
           <img src="bilde2.jpg"  width="400" height="400">
       </a>
 </li>
+<li class="imagebox">
+  <div class="gallery">
+      <a href="">
+          <img src="bilde.jpg"  width="400" height="400">
+      </a>
+
+</li>
+<li class="textbox">
+  <div class="gallery">
+      <a href="">
+          <img src="bilde2.jpg"  width="400" height="400">
+      </a>
+</li>
+
 <div class="portefolje">
-<iframe src="https://player.vimeo.com/video/748186425?h=bd921a0f35&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:relative;top:0;left:0;width:100%;height:100%;padding:25px;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe src="https://player.vimeo.com/video/748186425?background=1h=bd921a0f35&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:relative;top:0;left:0;width:100%;height:100%;padding:25px;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture " allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
 </div>
+
 <li class="kontakt">
   <form method="post" action="https://forms.un-static.com/forms/0a994fd9941f3131b01f94c4f385aa3b00c9d865">
     <div class="form-group row">
@@ -220,7 +251,7 @@ text-align: center;
             <div class="input-group-addon">
               <i class="fa fa-envelope"></i>
             </div>
-            <input id="email" name="email" placeholder="E-post adresse" type="text" required="required" class="form-control">
+            <input id="email" name="email" placeholder="E-post" type="text" required="required" class="form-control">
           </div>
         </div>
       </div>

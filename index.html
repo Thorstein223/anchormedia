@@ -9,6 +9,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://player.vimeo.com/api/player.js"></script>
   <link rel="stylesheet" href="kontakt.css">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:100'>
+
 <style>
 
 body, html {
@@ -25,6 +33,9 @@ background-color: #000000;
 
 div.bakgrunn {
   background-color: #ECB365;
+  background-image: url("wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
     width: 100%;
     display: flex;
     height: 100%;
@@ -39,6 +50,8 @@ justify-content: center;
 padding: 10px;
 align-items: center;
 text-align: center;
+backdrop-filter: blur(1px) saturate(70%);
+
 }
 
 h1 {
@@ -184,18 +197,21 @@ text-align: center;
 
   }
   div.bilder {
-    display: flex;
+    height: 80%;
     width: 100%;
-    height: 100%;
+    display: flex;
     justify-content: center;
-    align-items: center;
+   align-items: center;
   }
+
+ 
 </style>
 </head>
 
 <body>
 
   <div class="bakgrunn">
+  
     <div class="logostor">
       <img src="Logo.png">
     </div>
@@ -215,9 +231,8 @@ text-align: center;
 </li>
 
 <div class="bilder">
-  <a href="bilde2.jpg">
-  
-  </a>
+ 
+
 </div>
 
 <div class="portefolje">

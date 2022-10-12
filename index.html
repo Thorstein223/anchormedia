@@ -70,7 +70,7 @@ li.imagebox2 {
     float: right;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     height: 105%;
 }
 
@@ -183,6 +183,13 @@ text-align: center;
     height: 100%;
 
   }
+  div.bilder {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 </style>
 </head>
 
@@ -206,25 +213,12 @@ text-align: center;
       </a>
 
 </li>
-<li class="textbox2">
-  <div class="gallery">
-      <a href="">
-          <img src="bilde2.jpg"  width="400" height="400">
-      </a>
-</li>
-<li class="imagebox">
-  <div class="gallery">
-      <a href="">
-          <img src="bilde.jpg"  width="400" height="400">
-      </a>
 
-</li>
-<li class="textbox">
-  <div class="gallery">
-      <a href="">
-          <img src="bilde2.jpg"  width="400" height="400">
-      </a>
-</li>
+<div class="bilder">
+  <a href="bilde2.jpg">
+  
+  </a>
+</div>
 
 <div class="portefolje">
 <iframe src="https://player.vimeo.com/video/748186425?background=1h=bd921a0f35&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:relative;top:0;left:0;width:100%;height:100%;padding:25px;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture " allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>

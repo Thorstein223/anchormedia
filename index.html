@@ -19,14 +19,16 @@
 <script src="navbar.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" />
-
+  <script src="/path/to/jquery.js"></script>
+  <script src="/path/to/mediaelement-and-player.min.js"></script>
+  <link rel="stylesheet" href="/path/to/mediaelementplayer.min.css" />
 <style>
 
 body, html {
 height: 100%;
 width: 100%;
 margin: 0;
-background-color: #000000;
+background-color: #352c2c;
 }
 
 nav {
@@ -87,8 +89,8 @@ width: 100%;
   }
 }
 div.bakgrunn {
-  background-color: #ECB365;
   background-image: url("https://github.com/Thorstein223/Thorstein223.github.io/blob/main/img/bakgrunn3.JPG?raw=true");
+  background-color: #8BC6EC;
   background-position: center;
   background-size: cover;
     width: 100%;
@@ -134,44 +136,44 @@ h4 {
 
 
 li.imagebox2 {
-    background-color: #BB674A;
+    background-color: #FFFAFA;
     display: flex;
     float: right;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 105%;
+    height: 80%;
 }
 
 li.textbox2 {
-    background-color: #AB6B35;
+    background-color: #FFFAFA;
     display: flex;
     float: right;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 105%;
+    height: 80%;
     
    
 }
 li.imagebox {
-    background-color: #6485A8;
+    background-color: #FFFAFA;
     display: flex;
     float: right;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 105%;
+    height: 80%;
 }
 
 li.textbox {
-    background-color: #9BA5C9;
+    background-color: #FFFAFA ;
     display: flex;
     float: right;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 105%;
+    height: 80%;
     
    
 }
@@ -192,7 +194,7 @@ text-align:inherit;
 }
 div.gallery:hover {
   transition: transform 0.3s;
-  transform: scale(125%); 
+  transform: scale(115%); 
 position: sticky;
  padding: 30px;
 
@@ -219,7 +221,8 @@ div.logostor img {
     max-height: 100%;
 }
 li.kontakt {
-  background-color: #307392;
+  background-image: linear-gradient(to bottom, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+
     display: flex;
     float: right;
     justify-content: center;
@@ -229,6 +232,7 @@ li.kontakt {
 }
 div.bunn {
   display: flex;
+  color: rgb(0, 0, 0);
     width: 100%;
     height: 40%;
     justify-content: center;
@@ -244,13 +248,13 @@ text-align: center;
 
   }
   div.portefolje {
-    background-color: #1F1F1F;
+    background-color: #FFFAFA;
     display: flex;
-
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 140%;
+
 
   }
   div.bilder {
@@ -309,9 +313,9 @@ text-align: center;
     </a>
   </div>
 </li>
-
+<br>
 <div class="portefolje">
-<iframe src="https://player.vimeo.com/video/748186425?background=1h=bd921a0f35&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:relative;top:0;left:0;width:100%;height:100%;padding:25px;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture " allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+  <video class="mejs__player" src="bakgrunnsvideo.mp4"  autoplay="autoplay" controls="controls" type="video/mp4"></video>
 </div>
 
 <li class="kontakt">

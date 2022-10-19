@@ -44,6 +44,7 @@ height: 100%;
 width: 100%;
 margin: 0;
 background-color: #352c2c;
+background-repeat: no-repeat;
 }
 
 nav {
@@ -87,8 +88,9 @@ nav {
 }
 .back-video {
   position: absolute;
-height: auto;
-width: 100%;
+height: 100vw;
+width: 100vw;
+
  
 }
 @media (min-aspect-ratio: 16/9) {
@@ -151,28 +153,25 @@ h4 {
 
 
 li.imagebox2 {
-    background-color: #FFFAFA;
     display: flex;
     float: right;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 80%;
+    height: 90%;
 }
 
 li.textbox2 {
-    background-color: #FFFAFA;
     display: flex;
     float: right;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 80%;
+    height: 90%;
     
    
 }
 li.imagebox {
-    background-color: #FFFAFA;
     display: flex;
     float: right;
     justify-content: center;
@@ -182,7 +181,6 @@ li.imagebox {
 }
 
 li.textbox {
-    background-color: #FFFAFA ;
     display: flex;
     float: right;
     justify-content: center;
@@ -263,7 +261,6 @@ text-align: center;
 
   }
   div.portefolje {
-    background-color: #FFFAFA;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,7 +285,7 @@ text-align: center;
   
   <div class="bakgrunn">
   <video autoplay loop muted plays-inline class="back-video">
-    <source src="bakgrunnsvdeo.mp4" type="video/mp4">
+    <source src="video.mp4" type="video/mp4">
   </video>
     <div class="logostor">
       <img src="img/Logo.png" alt="">
@@ -330,7 +327,7 @@ text-align: center;
 </li>
 <br>
 <div class="portefolje">
-  <video src="myvideo"  src="Test.mp4" autoplay="autoplay" controls="controls" type="video/mp4"></video>
+  <video src="video.mp4" width="1200" height="800" type="video/mp4" autoplay muted controls loop></video>
 </div>
 
 <li class="kontakt">

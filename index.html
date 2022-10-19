@@ -17,6 +17,21 @@
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:100'>
 <link rel="shortcut icon" href="favicon.ico">
 <script src="navbar.js"></script>
+<script>
+  var myvid = document.getElementById('myvideo');
+var myvids = [
+  "test.mp4", 
+  "bakgrunnsvideo.mp4"
+  ];
+var activeVideo = 0;
+
+myvid.addEventListener('ended', function(e) {
+  activeVideo = (++activeVideo) % myvids.length;
+
+  myvid.src = myvids[activeVideo];
+  myvid.play();
+});
+</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" />
   <script src="/path/to/jquery.js"></script>
@@ -315,7 +330,7 @@ text-align: center;
 </li>
 <br>
 <div class="portefolje">
-  <video class="mejs__player" src="bakgrunnsvideo.mp4"  autoplay="autoplay" controls="controls" type="video/mp4"></video>
+  <video src="myvideo"  src="Test.mp4" autoplay="autoplay" controls="controls" type="video/mp4"></video>
 </div>
 
 <li class="kontakt">

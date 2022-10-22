@@ -55,6 +55,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010121",endCo
 html {
 min-height: 100%;
 scrollbar-width: none;  
+scroll-behavior: smooth;
 }
 
 nav {
@@ -294,43 +295,76 @@ text-align: center;
     justify-content: center;
    align-items: center;
   }
-div.tekst {
+  #tekstboks {
+    height:  80%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+div.tekst1 {
 height: 80%;
-width: 100%;
+width: 33%;
 display: flex;
 flex-direction: column;
-justify-content: center;
+align-items: center;
+padding-top: 10%;
+}
+div.tekst2 {
+  height: 80%;
+width: 33%;
+display: flex;
+
+flex-direction: column;
 align-items: center;
 }
-
+div.tekst3 {
+  height: 80%;
+width: 33%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+ } 
 </style>
 </head>
 
 <body>
- 
   <div class="bakgrunn">
   <video autoplay loop muted plays-inline class="back-video">
     <source src="" type="video/mp4">
   </video>
     <div class="logostor">
+
       <img src="img/Logo.png" alt="">
     </div>
-  
     <div class="introtekst">
       <h1>Anchor Media UB</h1>
       <h2>Foto • Video • Lyd</h2>
     </div>
     </div>
-
-<div class="tekst">
+<div id="tekstboks">
+<div class="tekst1">
 <h1 class><strong>Hvem er vi?</strong></h1>
 <h2>Anchor media er en ungdomsbedrift som ønsker å hjelpe bedrifter og organisasjoner med å nå målgruppen sin</h2>
 
 
 </div>
+<div class="tekst2">
+  <h1 class><strong>Om oss</strong></h1>
+<h2>Anchor media er en ungdomsbedrift som ønsker å hjelpe bedrifter og organisasjoner med å nå målgruppen sin</h2>
+</div>
+<div class="tekst3">
+  <h1 class><strong>Vår visjon</strong></h1>
+<h2>Anchor media er en ungdomsbedrift som ønsker å hjelpe bedrifter og organisasjoner med å nå målgruppen sin</h2>
+</div>
 
-
-<li class="imagebox2">
+</div>
+ <li class="imagebox2">
   <div class="gallery">
       <a href="">
           <img src="https://github.com/Thorstein223/Thorstein223.github.io/blob/main/img/51559592879_5ca65d8d6b_o.jpg?raw=true" alt="" width="600" height="600">
@@ -403,6 +437,7 @@ align-items: center;
     </form>
 </li>
 <div class="bunn">
+  
   <div class="bunntekst">
     <h4><strong>Anchor Media UB 2022</strong></h4>
 <br>

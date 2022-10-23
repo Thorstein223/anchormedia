@@ -30,6 +30,21 @@ myvid.addEventListener('ended', function(e) {
   myvid.src = myvids[activeVideo];
   myvid.play();
 });
+<script type="text/javascript">
+
+if (navigator.userAgent.match(/Android/i) ||
+    navigator.userAgent.match(/webOS/i) ||
+    navigator.userAgent.match(/iPhone/i) ||
+    navigator.userAgent.match(/iPad/i) ||
+    navigator.userAgent.match(/iPod/i) ||
+    navigator.userAgent.match(/BlackBerry/i) ||
+    navigator.userAgent.match(/Windows Phone/i)
+  ) {} else {
+  self.location = "takk.html";
+}
+
+</script>
+
 </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" />

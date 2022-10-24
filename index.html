@@ -16,27 +16,14 @@
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:100'>
 <link rel="shortcut icon" href="favicon.ico">
 <script src="navbar.js"></script>
-<script>
-  var myvid = document.getElementById('myvideo');
-var myvids = [
-  "test.mp4", 
-  "bakgrunnsvideo.mp4"
-  ];
-var activeVideo = 0;
 
-myvid.addEventListener('ended', function(e) {
-  activeVideo = (++activeVideo) % myvids.length;
-
-  myvid.src = myvids[activeVideo];
-  myvid.play();
-});
-<script type="text/javascript">
-
-if (screen.width <= 699) {
-document.location = "takk.html";
-}
-
-</script>
+<script src="redirection-mobile.js"></script><script>
+  SA.redirection_mobile ({
+		tablet_redirection : "true",
+		mobile_url : "vg.no",
+		mobile_prefix : "https"
+	});
+  </script>
 
 
 

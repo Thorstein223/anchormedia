@@ -19,19 +19,19 @@
         padding: 0px;
         scrollbar-width: none; 
         overflow-x: hidden;
-        position: absolute;
+        overflow-y: hidden;
+        
 
   }
 div.bakgrunn {
   background-image: url("https://raw.githubusercontent.com/Thorstein223/Thorstein223.github.io/main/img/bilde4-min-modified.JPG");
 background-size: cover;
 background-position: center;
-background-attachment:fixed;
 filter: blur(1px);
   -webkit-filter: blur(1px);
 display: flex;
 width: 100%;  
-height:200%;
+height:100%;
 justify-content: center;
     align-items: center;
 }
@@ -207,11 +207,12 @@ h4 {
   color: rgb(255, 255, 255);
 }
 
-#tekstboks1 {
+div.tekstboks1 {
   left: 50%;
-top: 120%;
-padding: 10px;
-text-align:center;
+top: 80%;
+padding: 5px;
+text-align:center ;
+text-overflow:ellipsis;
 justify-content: center;
 position: absolute;
 transform: translate(-50%, -50%);
@@ -232,8 +233,7 @@ z-index: 1
                       <span></span>
                   <ul id="menu">
                     <li><a href="#">Hjem</a></li>
-                    <li><a href="#tekstboks1">Om oss</a></li>
-                    <li><a href="#">Vårt Team</a></li>
+                    <li><a href="mobileomoss.html">Om oss</a></li>
                     <li><a href="mobilekontakt.html">Kontakt</a></li>
                   </ul>
                  </div>
@@ -247,10 +247,9 @@ z-index: 1
                 <h1>Anchor Media UB</h1>
                 <h2>Foto • Video • Lyd</h2>
               </div>
-           <div id="tekstboks1">
-            <h1><strong>Hvem er vi?</strong></h1>
-            <h2>Vi er en nyoppstartet ungdomsbedrift fra Hønefoss Vgs</h2>
-            <h2>Vi ønsker å hjelpe bedrifter og organisasjoner med å nå ut til sin målgruppe</h2>
+           <div class="tekstboks1">
+            <h2>Anchor media er en nyoppstartet ungdomsbedrift</h2>
+            <h2>Vi ønsker å hjelpe din bedrift eller organisasjon med markedsføring!</h2>
            </div>
 
 

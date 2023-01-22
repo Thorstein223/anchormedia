@@ -6,16 +6,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100&display=swap" rel="stylesheet">
   <meta charset="utf-8">
-  <script src="https://player.vimeo.com/api/player.js"></script>
   <link rel="stylesheet" href="kontakt.css">
-  <script src="index.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:100'>
 <link rel="shortcut icon" href="favicon.ico">
-<script src="navbar.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
 
 <script src="redirection-mobile.js"></script><script>
   SA.redirection_mobile ({
@@ -42,11 +40,8 @@ background-repeat: no-repeat;
     background-attachment: fixed;
 scrollbar-width: none;  
 overflow: scroll;
-background: rgb(1,1,33);
-background: -moz-linear-gradient(0deg, rgba(1,1,33,1) 13%, rgba(17,17,194,1) 71%, rgba(0,212,255,1) 100%);
-background: -webkit-linear-gradient(0deg, rgba(1,1,33,1) 13%, rgba(17,17,194,1) 71%, rgba(0,212,255,1) 100%);
-background: linear-gradient(0deg, rgba(1,1,33,1) 13%, rgba(17,17,194,1) 71%, rgba(0,212,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010121",endColorstr="#00d4ff",GradientType=1);  }
+background: radial-gradient(circle, #0a2a55, #6ac0da);
+ }
 
 html {
 
@@ -134,7 +129,7 @@ justify-content: center;
 padding: 10px;
 align-items: center;
 text-align: center;
-z-index: 2
+font-family: 'Arvo';font-size: 1em;
 
 }
 
@@ -264,9 +259,9 @@ li.kontakt {
 div.bunn {
   display: flex;
   background-size: 100%;
-background-color: #010123;
+background-color: #0b0b0b;
     width: 100%;
-    height: 25%;
+    height: 20%;
     justify-content: center;
     align-items: center;
     z-index: 5;
@@ -284,9 +279,8 @@ text-align: center;
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 140vw;
-
+    width: 100%;
+padding-top: 10%;
 
   }
   div.bilder {
@@ -296,40 +290,31 @@ text-align: center;
     justify-content: center;
    align-items: center;
   }
-  #tekstboks {
-    height:  80%;
-    width: 100%;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 5%;
+  div.tekstboks {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: flex-start;
+position: relative;
+width: 100%;
+height: 50%;
+padding-top: 10%;
   }
 div.tekst1 {
-height: 80%;
-width: 33%;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-top: 10%;
-align-items: center;
-text-align: center;
+flex-basis: 40%;
+padding-left: 6%;
+width: 100%;
+word-wrap: break-word;
 }
 div.tekst2 {
-  height: 80%;
-width: 33%;
-display: flex;
-text-align: center;
-flex-direction: column;
-align-items: center;
+flex-basis: 40%;
+padding-right: 6%;
 }
 div.tekst3 {
-  height: 80%;
-width: 33%;
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
+flex-basis: 100%;
+height: 30%;
+padding: 10%;
+word-wrap:break-word;
 }
 a {
   text-decoration: none;
@@ -375,53 +360,20 @@ align-content: center;
       <h2>Reklame fra start til slutt</h2>
     </div>
     </div>
-<div id="tekstboks">
-<div class="tekst1">
-<h1 class><strong>Hvem er vi?</strong></h1>
-<h2>Vi er en ungdomsbedrift fra Hønefoss videregående skole. Vi har fem dyktige ansatte med bred faglig kompetanse</h2>
-
-
-</div>
+<div class="tekstboks">
+<div class="tekst1"><h1 class><strong>Hvem er vi?</strong></h1>
+  <h2>Vi er en ungdomsbedrift fra Hønefoss videregående skole. Vi har fem dyktige ansatte med bred faglig kompetanse</h2>
+  
+  </div>
 <div class="tekst2">
-  <h1 class><strong>Om oss</strong></h1>
-<h2>Våre ansatte har bred faglig kompetanse. Vi har mange års erfaring med praktisk produksjon av video og bilde. Premiere pro, After effects og Davinci Resolve er programmer vi har god kjennskap til</h2>
-</div>
-<div class="tekst3">
   <h1 class><strong>Vår visjon</strong></h1>
-<h2>Vi ønsker å hjelpe bedrifter og organisasjoner med å nå ut til sin målgruppe på digitale fronter</h2>
+  <h2>Vi ønsker å hjelpe bedrifter og organisasjoner med å nå ut til sin målgruppe på digitale fronter</h2>
+  
 </div>
-
+<div class="tekst3"><h1 class><strong>Om oss</strong></h1>
+  <h2>Vi er en bedrift med lang erfaring innen video- og fotoproduksjon. Vårt team består av dyktige medarbeidere med mange års erfaring i bransjen. Vi har bred kompetanse i å skape kreative og engasjerende innhold, og har et godt øye for detaljer og estetikk. Vår kunnskap om programmer som bl.a. Premiere Pro og After Effects gjør at vi kan levere høy kvalitet på våre produksjoner. Vi er dedikerte til å møte våre kunders behov og jobber hardt for å skape resultater som overgår deres forventninger. </h2>
+  </div>
 </div>
- <li class="imagebox1">
-  <div class="gallery">
-      <a href="">
-          <img src="https://github.com/Thorstein223/Thorstein223.github.io/blob/main/img/51559592879_5ca65d8d6b_o.jpg?raw=true" alt="" width="600" height="600">
-      </a>
-
-</li>
-<li class="imagebox2">
-  <div class="gallery">
-    <a href="">
-      <img src="https://github.com/Thorstein223/Thorstein223.github.io/blob/main/img/bilde1.jpg?raw=true" alt="" width="600" height="600">
-    </a>
-  </div>
-</li>
-<br>
-<li class="imagebox3">
-  <div class="gallery">
-    <a href="">
-      <img src="https://github.com/Thorstein223/Thorstein223.github.io/blob/main/img/bilde4.JPG?raw=true " alt="" width="600" height="600">
-    </a>
-  </div>
-</li>
-<li class="imagebox4">
-  <div class="gallery">
-    <a href="">
-      <img src="https://raw.githubusercontent.com/Thorstein223/Thorstein223.github.io/main/img/bilde2.jpg" alt="" width="600" height="600">
-    </a>
-  </div>
-</li>
-<br>
 <div class="portefolje">
   <video src="video.mp4"  width="auto" height=auto type="video/mp4"    loop controls></video>
 </div>
